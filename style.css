@@ -48,7 +48,7 @@
         .leftSection{
             /* background-color: red; */
             font-size:2.5rem;
-            margin:40px 0;
+            margin:40px 7vw;
         }
         .rightSection{
            width:.5px; 
@@ -65,7 +65,7 @@
             border-radius: 40pt;
             display: block;
             margin-left: auto;
-             /* margin-right: auto; */
+             margin-right: 3vw;
 
         }
         .left img{
