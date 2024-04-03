@@ -1,26 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>new website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <style>
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body {
+    background-color: rgba(237, 236, 236, 0.906);
+    color: rgb(72, 72, 72);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: rgba(36, 36, 36, 0.18);
+    padding: 0 20px; /* Add padding to the nav */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items vertically */
+    height: 100%; /* Take full height of the nav */
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: black;
+    font-size: 1.05rem;
+}
+
+.left {
+    font-size: 1.5em;
+    padding: 7px;
+}
+
+.left img {
+    border-radius: 10%;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Align items vertically */
+    margin: 23px 0;
+}
+
+.leftSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items horizontally */
+}
+
+.leftSection .small {
+    font-size: 2rem;
+    color: dimgray;
+}
+
+.leftSection .big {
+    font-size: 2.5rem;
+}
+.rightSection {
+    max-width: 80vw;
+    margin: 0 auto; /* Center horizontally */
+    display: flex; /* Use flexbox */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: end; /* Center vertically */
+}
+
+.rightSection img {
+    max-width: 100%; /* Adjust to container width */
+    width: 300px; /* Set a fixed width */
+    margin: 15px 0; /* Provide vertical margin */
+    border-radius: 20px;
+}
+
+.sec{
     
+    display: flex;
+    justify-content: center; /* Horizontally center the items */
+}
+.secondSection {
+    max-width: 80vw;
+    display: flex;
+    justify-content: center;
+}
+.secondSection > * {
+    margin: 0 auto; /* Centers the children horizontally within .secondSection */
+}
+
+.left img {
+    width: 50px;
+}
+footer{
+    background-color: rgb(186, 183, 183) ;
+    height:150px;
+
+}
+.footer{
+    display:flex;
+    margin:35px px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.footer ul{
+    list-style: none;
+}footer>div{
+    width:123px;
+    
+}
+
+        </style>
+
 </head>
 
 <body>
 </body>
 <header>
     <nav>
-        <div class="left"> <h1><img src="logo .png" width="50px" >
-        </h1></div>
+        <div class="left">
+            <h1><img src="logo .png" width="50px">
+            </h1>
+        </div>
         <div class="right">
             <ul>
-                <li><a href="/#">Home</a></li> 
+                <li><a href="/#home">Home</a></li>
                 <li><a href="/#About">About</a></li>
                 <li><a href="/#Service">Service</a></li>
                 <li><a href="/#Projects">Projects</a></li>
@@ -30,41 +160,74 @@
     </nav>
 </header>
 <main>
- <section class="firstSection">
-    <div class="leftSection">
-        <div class="small">Hi,I am</div>
-        <div class="big">Yubesh Bhattrai</div>
-        <div class="small">And,I am passionate</div>
-        <div class="big"><span id="element"></span>
+    <section class="firstSection">
+        <div class="leftSection">
+            <div class="small">Hi,I am</div>
+            <div class="big">Yubesh Bhattrai</div>
+            <div class="small">And,I am passionate</div>
+            <div class="big"><span id="element"></span>
+            </div>
         </div>
-     </div>
-    <span id="element"></span>
- </div>
-<div class="rightSection">
-    <img src="downloaded.png">
-</div>
+        <span id="element"></span>
+        </div>
+        <div class="rightSection">
+            <img src="downloaded.png">
+        </div>
     </section>
     <hr>
-    <section class="secondSection">
-<h1>Qualification</h1>
-<ul><li><h3><i>2023</i></h3></li>
-    <h4>started studing HTML/CSS </h4>
-    <li> <h3><i>2024 </i></h3></li>
-<h4>started studying c programming language</h4>
-<h4>started studying python  programming language</h4>
-<li><h3><i>2025</i></h3></li>
-<h4><h4>started studying c++ programming language</h4></h4>
-</ul>
-    </section>
-    
+    <div class="sec">
+
+        <div class="secondSection">
+            <h1>Qualification</h1>
+            <ul>
+                <li>
+                    <h3><i>2023</i></h3>
+                </li>
+                <h4>started studing HTML/CSS </h4>
+                <li>
+                    <h3><i>2024 </i></h3>
+                </li>
+                <h4>started studying c programming language</h4>
+                <h4>started studying python programming language</h4>
+                <li>
+                    <h3><i>2025</i></h3>
+                </li>
+                <h4>
+                    <h4>started studying c++ programming language</h4>
+                </h4>
+            </ul>
+        </div>
+    </div>
+
 </main>
+<footer>
+    <div>
+        <div class="flex">
+            <div class="footer-first">footer</div>
+            <div class="footer-second">
+                <ul>
+                    <li>home</li>
+                    <li>contacts</li>
+                    <li>services</li>
+                    <li>About</li>
+
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>hello</li>
+                    <li>hello</li>
+                    <li>hello</li>
+
+                </ul>
+            </div>
+            <div class="footer-fourth">
+            </div>
+</footer>
+
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script>
-    var typed = new Typed('#element', {
-      strings: ['WEB DESIGNER', ' PROGRAMMER','IT ENTHUSIAST'],
-      typeSpeed: 50,
-      loop: true
-    });
-  </script>
+
+<script src=""></script>
 </body>
+
 </html>
